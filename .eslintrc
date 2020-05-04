@@ -1,19 +1,22 @@
 {
-  "extends": ["plugin:prettier/recommended", "eslint:recommended"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
-  "ignorePatterns": [".html", "node_modules/"],
+  "ignorePatterns": ["*.html", "node_modules/"],
+  "root": true,
   "env": {
     "browser": true,
     "es6": true
   },
   "parserOptions": {
     "ecmaVersion": 2020,
+    "sourceType": "module",
     "ecmaFeatures": {
       "impliedStrict": true
     }
   },
   "rules": {
     "prettier/prettier": "error",
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn"
   }
 }
