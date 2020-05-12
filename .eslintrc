@@ -9,14 +9,15 @@
   },
   "parserOptions": {
     "ecmaVersion": 2020,
-    "sourceType": "module",
+    "sourceType": "script",
     "ecmaFeatures": {
-      "impliedStrict": true
+      "impliedStrict": false
     }
   },
   "rules": {
     "prettier/prettier": "error",
     "semi": ["error", "always"],
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "strict": ["error", "global"]
   }
 }
